@@ -1,0 +1,26 @@
+-- SUPERUSER
+
+-- USERS:
+CREATE USER leandro WITH PASSWORD 'leandro';
+ALTER USER leandro WITH SUPERUSER;
+
+CREATE USER luna WITH PASSWORD 'luna';
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO luna;
+
+-- TABLE:
+CREATE TABLE teste (
+	id SERIAL PRIMARY KEY,
+	nome VARCHAR(100)
+);
+
+-- INSERTS:
+INSERT INTO teste(nome) VALUES
+	('Leandro'),
+	('Luna'),
+	('Joao');
+
+-- VIEW:
+SELECT * FROM teste;
+
+-- APAGAR TABELA:
+DROP TABLE teste;

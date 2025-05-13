@@ -1,0 +1,9 @@
+-- USER LEANDRO:
+DROP TABLE teste;
+
+SELECT * FROM teste;
+
+CREATE TABLE teste2 (
+	id SERIAL PRIMARY KEY,
+	nome VARCHAR(100)
+);
