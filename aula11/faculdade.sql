@@ -1,0 +1,12 @@
+CREATE TABLE alunos (
+	id SERIAL PRIMARY KEY,
+	nome VARCHAR(100) NOT NULL,
+	idade INT NOT NULL,
+	curso VARCHAR(100)
+);
+
+CREATE TABLE professores (
+	id SERIAL PRIMARY KEY,
+	nome VARCHAR(100) NOT NULL,
+	disciplina VARCHAR(100) NOT NULL
+);
